@@ -1,0 +1,47 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+
+.jumbotron {
+	height: 75vh;
+
+}
+
+.parallax {
+	background-image: url(./../images/flowers.jpg);
+	height: 50vh;
+	background-attachment: fixed;
+	/*background-position:;*/
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.profilePic {
+	width: 300px;
+	height: 300px;
+}
+
+.btn{
+	background-color: #f6c5b8;
+}
+
+.row {
+	margin: 0;
+}
+
+
+
+@media (max-width: 767px){
+	.colImg {
+		margin-bottom: 25px;
+	}
+}
+
+@media (min-width: 768px){
+	.aboutInfo {
+		margin-top: 100px;
+	}
+}
