@@ -1,13 +1,74 @@
 *{
 	margin: 0;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	/*color: #495d43;*/
+}
+
+.navbar-brand{
+	font-size: 40px;
 }
 
 
 .jumbotron {
-	height: 75vh;
+	height: 80vh;
 
+}
+
+/*source:  https://www.youtube.com/watch?v=m0o0QNpY9-0*/
+
+.wrapper {
+	display: inline-flex;
+}
+
+.wrapper .static-txt {
+	font-size: 60px;
+	font-weight: 400;
+}
+
+.wrapper .dynamic-txts {
+	margin-left: 15px;
+	line-height: 90px;
+}
+
+.dynamic-txts li{
+	list-style: none;
+	font-size: 60px;
+	font-weight: 500;
+}
+
+.dynamic-txts li span{
+	position: relative;
+}
+
+.dynamic-txts li span::after {
+	content: "";
+	position: absolute;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: #fff5e9;
+	border-left: 2px solid #FC6D6D;
+	animation: typing 10s steps(20) infinite;
+}
+@keyframes typing {
+	100%{
+		left: 100%;
+		margin: 0 -35px 0 35px;
+	}
+}
+
+blockquote p {
+	font-family: 'Tangerine', serif;
+    font-size: 38px;
+    text-shadow: 4px 4px 4px #aaa;
+}
+
+.blockquote-footer{
+	font-size: 20px;
 }
 
 .parallax {
@@ -19,29 +80,96 @@
 	background-size: cover;
 }
 
+.h1title{
+	background-color: #fff5e9;
+}
+
+#about{
+	background-color: #fff5e9;
+}
+
+.aboutInfo {
+	background-color: #f6c5b8;
+}
+
 .profilePic {
 	width: 300px;
 	height: 300px;
 }
 
 .btn{
-	background-color: #f6c5b8;
+	background-color: #fff59e;
+}
+
+.submit-btn {
+	background-color: #fff59e;
 }
 
 .row {
 	margin: 0;
 }
 
+.workExp {
+	background-color: #f6c5b8;
+}
+
+#contact {
+	background-color: #fff5e9;
+}
+
+footer {
+	background-color: #fff5e9;
+}
+
+i {
+	font-size: 40px;
+/*	margin-left: 20px;
+	margin-right: 10px;*/
+}
+
+.fa-paper-plane {
+	font-size: 20px;
+}
+
+.fa-viber {
+	font-size: 20px;
+}
+
+.fa-envelope-open-text {
+	font-size: 20px;
+}
+
+.fa-facebook {
+
+}
+
+.fa-instagram-square {
+
+}
+
+a {
+	color: black;
+}
 
 
 @media (max-width: 767px){
 	.colImg {
 		margin-bottom: 25px;
 	}
+
+	.navbar-collapse {
+		display: flex;
+		justify-content: flex-start;
+	}
 }
 
 @media (min-width: 768px){
 	.aboutInfo {
-		margin-top: 100px;
+		margin-top: 45px;
+	}
+
+	.navbar-collapse {
+		display: flex;
+		justify-content: flex-end;
 	}
 }
